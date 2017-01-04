@@ -7,23 +7,23 @@ import java.util.List;
 */
 public interface ToDoListDAO {
   
-	public boolean addUser(User user) throws ToDoListException;
+	public void addUser(User user) throws ToDoListException;
 
-	public boolean deleteUser(User user) throws ToDoListException;
+	public void deleteUser(User user) throws ToDoListException;
 
   	public User getUser(String userName) throws ToDoListException;
 
 	public List<User> getAllUsers() throws ToDoListException;
   
-  	public boolean updateUser(User user) throws ToDoListException;
+  	public void updateUser(User user) throws ToDoListException;
 
 	public User login(User user) throws ToDoListException;
 
-	public boolean addTask(Task task) throws ToDoListException;
+	public void addTask(Task task) throws ToDoListException;
 
-	public boolean deleteTask(Task task) throws ToDoListException;
+	public void deleteTask(Task task) throws ToDoListException;
   
 	public List<Item> getAllTasks() throws ToDoListException;
 
-	public boolean updateTask(Task task) throws ToDoListException;
+	public void updateTask(Task task) throws ToDoListException;
 }
