@@ -15,7 +15,7 @@ public interface ToDoListDAO {
 
 	public List<User> getAllUsers() throws ToDoListException;
   
-  	public boolean updateTask(Task task) throws ToDoListException;
+  	public boolean updateUser(User user) throws ToDoListException;
 
 	public User login(User user) throws ToDoListException;
 
